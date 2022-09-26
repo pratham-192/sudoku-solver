@@ -79,10 +79,24 @@ function validate() {
     let isOk = isvalidsudoku(arr);
     if (isOk == false) alert("invalid sudoku");
     else {
+        colorchange();
         if (solveSudoku()) {
             printsudoku();
             alert("sudoku solved");
         } else alert("sudoku can't be solved");
+    }
+}
+function colorchange(){
+    for(var i=0;i<9;i++)
+    {
+        for(var j=0;j<9;j++)
+        {
+            if(arr[i][j]!='_')
+            {
+                var y=document.getElementById(i.toString()+"-"+j.toString());
+                y.style.color="red";
+            }
+        }
     }
 }
 function isvalidSudokusolve(row, col, c) {

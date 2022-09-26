@@ -4,7 +4,6 @@
     margin: 0 auto;
     margin-bottom: 50px;
     display: grid;
-    /* flex-wrap: wrap; */
     grid-template-columns: repeat(9, 54px);
     grid-auto-columns: 80px;
 }
