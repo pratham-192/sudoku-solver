@@ -1,0 +1,52 @@
+#sudoku-grid {
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: grid;
+    /* flex-wrap: wrap; */
+    grid-template-columns: repeat(9, 54px);
+    grid-auto-columns: 80px;
+}
+
+.tile{
+    width: 48px; 
+    height: 48px;
+    border: 1px solid lightgray;
+
+    /* Text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tile:hover{
+    cursor: pointer;
+    background-color: rgb(219, 161, 161);
+}
+.horizontal-line {
+    border-bottom: 1px solid black;
+}
+
+.vertical-line {
+    border-right: 1px solid black;
+}
+input{
+    text-align: center;
+}
+#start,#reset,#validate{
+    width: 100px;
+    height: 30px;
+    position: relative;
+    left: 40%;
+    top: 50%;
+    transition: transform 1s;
+}
+#start:hover,#reset:hover,#validate:hover{
+    /* transform: scale(1.3,1.3); */
+    background-color: rgb(180, 167, 167);
+    color: rgb(94, 34, 16);
+    font-weight: bold;
+    cursor: pointer;
+}
