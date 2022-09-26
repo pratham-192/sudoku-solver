@@ -142,6 +142,7 @@ function clear(){
         {
             arr[i][j]='_';
             var x=document.getElementById(i.toString()+"-"+j.toString());
+            x.style.color="black";
             x.value="";
         }
     }
